@@ -19,7 +19,7 @@ export default function SideBar(props: SideBarprops) {
         <NavLink
           key={index}
           className={` flex gap-3 items-center pl-6  pb-4`}
-          to={item.path}
+          to={`${item.path}`}
         >
           <span className="text-gray-700 ">{item.icon}</span>
 
