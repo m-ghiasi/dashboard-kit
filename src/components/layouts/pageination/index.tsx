@@ -1,43 +1,39 @@
+import Button from "../../basic/Button";
 
-
-type PaginationProps = {
+type PaginationType = {
   currentPage: number;
   totalPages: number;
   onNext: () => void;
   onPrev: () => void;
 };
 
-export default function Pagination({
-  currentPage,
-  totalPages,
-  onNext,
-  onPrev,
-}: PaginationProps) {
+export default function Pagination(props: PaginationType) {
+  const { currentPage, totalPages, onNext, onPrev } = props;
   return (
     <div className="flex justify-between items-center mt-4 px-2">
-      <button
-        onClick={onPrev}
+      <Button
+        onclick={onPrev}
         disabled={currentPage === 1}
         className={`px-3 py-1 rounded bg-gray-200 text-sm ${
           currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""
         }`}
       >
         قبلی
-      </button>
+      </Button>
 
       <span className="text-sm text-gray-700">
         صفحه {currentPage} از {totalPages}
       </span>
 
-      <button
-        onClick={onNext}
+      <Button
+        onclick={onNext}
         disabled={currentPage === totalPages}
         className={`px-3 py-1 rounded bg-gray-200 text-sm ${
           currentPage === totalPages ? "opacity-50 cursor-not-allowed" : ""
         }`}
       >
         بعدی
-      </button>
+      </Button>
     </div>
   );
 }
