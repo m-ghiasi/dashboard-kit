@@ -22,7 +22,7 @@ export default function AddProducts(){
           <p>isLoading....</p>
         </Modal>
       ) : null}
-          <div className="flex flex-col  gap-3 ">
+          <div className="flex flex-col  gap-1 ">
             
            {orders.map((item, index)=>(
             <Card 
@@ -31,9 +31,11 @@ export default function AddProducts(){
             number={index}
             status={item.status}
             title={item.title}
+            date={item.date}
 
              />
            ))}
+           
         </div>
       </div>
     )
