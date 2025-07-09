@@ -19,11 +19,11 @@ export default function TopBar(props: SideBarprops) {
   
   return (
     <div className="w-[100%]">
-    <div className="w-[100%] flex  border-b-1 border-[#454B60] items-center justify-center  gap-15 pt-4">
+    <div className="w-[100%] flex  border-b-1 border-[#454B60] items-center justify-center  gap-20 pt-4">
         {topBarItems.map((item, index) => (
         <NavLink
           key={index}
-          className={`${isActive===item.label ? "border-b-2 border-[#454B60]":""} flex gap-3 items-center pb-4 `}
+          className={`${isActive===item.label ? "border-b-2 border-[#454B60] font-bold":""} flex gap-3 items-center pb-4 `}
           to={`${item.to}`}
           onClick={()=>setIsActive(item.label)}
           

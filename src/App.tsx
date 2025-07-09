@@ -4,6 +4,7 @@ import MainLayout from "./components/layouts/MainLayout";
 import AddProducts from "./pages/AddProducts";
 import Home from "./pages/Home";
 import Analytics from "./pages/Analytics";
+import Report from "./pages/Report";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/AddProducts" element={<AddProducts />}></Route>
           <Route path="/Home" element={<Home />}></Route>
           <Route path="/Analytics" element={<Analytics />}></Route>
+          <Route path="/Report" element={<Report />}></Route>
           <Route path="*" element={<AddProducts />}></Route>
         </Route>
       </Routes>

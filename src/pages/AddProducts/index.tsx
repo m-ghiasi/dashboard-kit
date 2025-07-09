@@ -12,7 +12,7 @@ export default function AddProducts() {
   // pagination data
 
   const [currentPage, setCurrentPage]= useState(1);
-  const itemPerPage = 7;
+  const itemPerPage = 12;
   const startIndex= (currentPage - 1)* itemPerPage;
   const endIndex = startIndex + itemPerPage;
   

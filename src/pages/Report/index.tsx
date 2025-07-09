@@ -1,4 +1,4 @@
-export default function AddProducts(){
+export default function Report(){
     return(
         <div className="flex items-center ">
             products........
