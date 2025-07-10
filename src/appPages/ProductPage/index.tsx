@@ -1,8 +1,9 @@
-import Button from "../../basic/Button";
-import Typography from "../../parand/Typography";
-import Banner from "../../parand/Banner";
-import NumberOrder from "../../parand/NumberOrder";
-import Textarea from "../../parand/Textarea";
+import Button from "../../components/basic/Button"
+import Typography from "../../components/parandComponents/Typography"
+import Banner from "../../components/parandComponents/Banner"
+import NumberOrder from "../../components/parandComponents/NumberOrder"
+import Textarea from "../../components/parandComponents/Textarea"
+
 
 export default function ProductPage(){
     const handelBackStep= ()=>{
@@ -12,7 +13,7 @@ export default function ProductPage(){
         <div className="h-screen relative ">
       <Banner className="h-[40%]" />
       <Button onclick={handelBackStep} label=" " className="rounded-full absolute top-5 right-10 bg-white w-10 h-10   z-10" />
-      <Typography  />
+      <Typography/>
       <NumberOrder />
       <Textarea />
     </div>
