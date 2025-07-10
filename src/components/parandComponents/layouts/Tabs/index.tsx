@@ -1,13 +1,14 @@
 type TabType = {
   handelModal: () => void;
 };
-import Button from "../../basic/Button";
+
 
 import IconButtonGroup from "../IconButtonGroup";
 import { IoIosSettings } from "react-icons/io";
 import { FaPlusCircle } from "react-icons/fa";
 import { FaCircleMinus } from "react-icons/fa6";
 import { FcOk } from "react-icons/fc";
+import Button from "../../../basic/Button";
 
 export default function Tab(props: TabType) {
   const { handelModal } = props;

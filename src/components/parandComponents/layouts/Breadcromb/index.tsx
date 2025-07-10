@@ -1,7 +1,9 @@
 import { useState } from "react"
-import Card from "../../basic/Card";
+
 import { FaHome } from "react-icons/fa";
-import Button from "../../basic/Button";
+import Button from "../../../basic/Button";
+import Card from "../../../basic/Card";
+
 
 export default function Breadcromb(){
     

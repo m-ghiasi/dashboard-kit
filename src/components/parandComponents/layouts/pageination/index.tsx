@@ -1,4 +1,5 @@
-import Button from "../../basic/Button";
+import Button from "../../../basic/Button";
+
 
 type PaginationType = {
   currentPage: number;

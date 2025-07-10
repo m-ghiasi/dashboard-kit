@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 type ButtonType = {
   label?: string;
   className?: string;
-  onclick: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  onclick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   children?: ReactNode;
   disabled?: boolean;
 };

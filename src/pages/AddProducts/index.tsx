@@ -1,10 +1,12 @@
 import { useState } from "react";
 import Card from "../../components/basic/Card";
-import Tab from "../../components/layouts/Tabs";
-import { orders } from "../../data/products";
+
+import { orders} from "../../data"
 import Modal from "../../components/basic/Modal";
 import Button from "../../components/basic/Button";
-import Pagination from "../../components/layouts/pageination";
+
+import Tab from "../../components/parandComponents/layouts/Tabs";
+import Pagination from "../../components/parandComponents/layouts/pageination";
 
 export default function AddProducts() {
   const [show, setShow] = useState(false);

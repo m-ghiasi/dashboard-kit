@@ -1,6 +1,7 @@
 
 import type { ReactNode } from "react";
-import IconButton from "../../basic/IconButton";
+import IconButton from "../../../basic/IconButton";
+
 
 
 type IconButtonGroupType = {
