@@ -6,5 +6,5 @@ type BannerType = {
 
 export default function Banner(props: BannerType) {
   const { className } = props;
-  return <Img image="imagelink" className={`${className} bg-gray-400`}></Img>;
+  return <Img image="imagelink" className={`${className} bg-gray-400  `}></Img>;
 }
