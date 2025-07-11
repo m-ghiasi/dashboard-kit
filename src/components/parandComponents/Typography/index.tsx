@@ -1,9 +1,13 @@
+type typoghraphyType ={
+  className:string
+}
 import Paragraph from "../../basic/Paragraph";
 import Title from "../../basic/Titel";
 
-export default function Typography() {
+export default function Typography(props:typoghraphyType) {
+  const {className} = props
   return (
-    <div className="p-2 flex flex-col gap-3">
+    <div className={`${className}`} >
       <Title className="bg-[#72777B] w-40 h-4 rounded-2xl" title="" />
       <hr className="text-[#E3E5E8]" />
       <Paragraph content="" className="bg-[#E3E5E8]  w-70 h-4 rounded-2xl " />

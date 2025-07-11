@@ -1,9 +1,13 @@
-"use client";
+type Textarea = {
+  className:string;
 
-export default function Textarea() {
+}
+
+export default function Textarea(props:Textarea) {
+  const {className}=props
   return (
   
-        <div className="bg-gray-500 h-40  rounded-2xl">
+        <div className={`${className}`}>
           <textarea name="" id=""></textarea>
         </div>
      

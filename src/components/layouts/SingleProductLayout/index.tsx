@@ -15,7 +15,7 @@ export default function SingleProductLayout(props: LayoutType) {
     <div className="h-screen relative  ">
       <Banner className="w-full   bg-[#BBBFC3] " />
       <Button
-        className="rounded-full fixed top-5 right-10 w-12 h-12 flex justify-center items-center z-10 bg-[#BBBFC3]"
+        className="rounded-full fixed top-5 right-5 w-12 h-12 flex justify-center items-center z-10 bg-[#BBBFC3]"
         onclick={handelBackPage}
       >
         <IoIosArrowForward color={"#fff"} size={30} />
