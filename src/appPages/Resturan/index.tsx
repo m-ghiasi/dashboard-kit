@@ -1,13 +1,11 @@
 import { Outlet } from "react-router-dom";
-
-
-
+import ResturanPageLayout from "../../components/layouts/ResturanPageLayout";
 
 export default function Resturan() {
-
   return (
-   <div>
-    <Outlet />
-   </div>
+    
+    // <ResturanPageLayout>
+      <Outlet />
+    // </ResturanPageLayout>
   );
 }

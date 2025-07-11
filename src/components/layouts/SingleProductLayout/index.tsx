@@ -5,11 +5,15 @@ import type { ReactNode } from "react";
 import Button from "../../basic/Button";
 import { IoIosArrowForward } from "react-icons/io";
 import Banner from "../../parandComponents/Banner";
+import { useNavigate } from "react-router-dom";
 
 export default function SingleProductLayout(props: LayoutType) {
   const { children } = props;
+  const navigate= useNavigate()
+
+  // از بیرون باید بهش پاس داده بشه ؟؟
   const handelBackPage = () => {
-    console.log("Privious Page");
+    navigate("/resturan");
   };
   return (
     <div className="h-screen relative  ">
@@ -25,7 +29,7 @@ export default function SingleProductLayout(props: LayoutType) {
 
       <div className="border-t-2 border-[#E3E5E8] bg-white flex justify-center items-center fixed bottom-0 py-7 max-h-[150px] w-full">
         <Button
-          className="bg-[#72777b] w-[225px] h-[75px]  rounded-2xl  "
+        className="bg-[#72777b] w-[225px] h-[75px]  rounded-2xl  "
           onclick={handelBackPage}
         ></Button>
       </div>
