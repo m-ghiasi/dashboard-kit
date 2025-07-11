@@ -1,8 +1,8 @@
 
 import SingleProductLayout from "../../components/layouts/SingleProductLayout";
 
-import Banner from "../../components/parandComponents/Banner";
-import NumberOrder from "../../components/parandComponents/NumberOrder";
+
+import NumberOfOrder from "../../components/parandComponents/NumberOfOrder";
 import Textarea from "../../components/parandComponents/Textarea";
 import Typography from "../../components/parandComponents/Typography";
 
@@ -11,12 +11,12 @@ export default function ProductPage() {
 //     console.log("HomePage");
 //   };
   return (
-    <SingleProductLayout>
-      {/* <Banner className="h-[40%] " />
+    <SingleProductLayout >
+      
      
-      <Typography />
-      <NumberOrder />
-      <Textarea /> */}
+       <Typography />
+       <NumberOfOrder />
+      <Textarea /> 
     </SingleProductLayout>
   );
 }

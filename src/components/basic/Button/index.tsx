@@ -12,7 +12,7 @@ export default function Button(props: ButtonType) {
   return (
     <button
       onClick={onclick}
-      className={`flex gap-1 px-3 items-center cursor-pointer ${className} text-[14px]`}
+      className={`flex gap-1  items-center cursor-pointer ${className} text-[14px]`}
       disabled={disabled}
     >
       {children}

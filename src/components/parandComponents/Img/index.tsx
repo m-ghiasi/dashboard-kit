@@ -6,7 +6,7 @@ type prop = {
 };
 export default function Img({ className,image}: prop) {
   return (
-    <img  className={className} src={image} alt="" />
+    <img  className={`${className} `} src={image} alt="" />
    
   );
 }
