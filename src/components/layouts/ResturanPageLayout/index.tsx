@@ -21,23 +21,17 @@ export default function ResturanPageLayout(props: LayoutType) {
   return (
     <div className="h-screen relative  ">
       <Banner className="w-full   bg-[#BBBFC3] " />
-      <div className="w-full  fixed top-5 flex justify-between items-center ">
-        <Button
-          className="text-white rounded-full  top-5 right-5 w-12 h-12 flex justify-center items-center  "
-          onclick={handelFavorit}
-        >
+      <div className="w-full px-5 fixed top-5 flex justify-between items-center ">
+        <Button className="text-white    w-12 h-12  " onclick={handelFavorit}>
           <FaRegHeart color={isFavorit ? "red" : ""} size={30} />
         </Button>
 
-        <Button
-          className="rounded-full fixed top-5 right-5 w-12 h-12 flex justify-center items-center z-10"
-          onclick={handelBackPage}
-        >
+        <Button className=" w-12 h-12 " onclick={handelBackPage}>
           <IoIosArrowForward color={"#fff"} size={30} />
         </Button>
       </div>
 
-      <div className="flex-1 overflow-y-auto px-6 pt-16 pb-28 flex flex-col gap-[15px] ">
+      <div className="flex-1 overflow-y-auto px-6 pt-16 pb-28 flex flex-col gap-[20px] ">
         {children}
       </div>
     </div>
